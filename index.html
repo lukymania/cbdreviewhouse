@@ -69,12 +69,7 @@
   "url": "https://cbdreviewhouse.com",
   "logo": "assets/logo.png",
   "description": "Independent CBD product review platform providing honest, lab-tested rankings of the best CBD oils and tinctures.",
-  "sameAs": [
-    "https://cbdreviewhouse.info",
-    "https://thecbdreviewers.com",
-    "https://nanocbdlab.com",
-    "https://nanocbdrankings.com"
-  ]
+  
 }
 </script>
 
@@ -523,30 +518,13 @@ p { margin-bottom: 1rem; }
 /* ============================================
    NETWORK SECTION
    ============================================ */
-.network-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
-.network-card {
-  background: var(--white);
-  border: 1px solid var(--gray-200);
-  border-radius: var(--radius-lg);
-  padding: 1.5rem;
-  text-align: center;
-  transition: all 0.2s;
-}
-.network-card:hover { border-color: var(--teal); box-shadow: var(--shadow-md); transform: translateY(-4px); }
-.network-icon {
-  width: 56px;
-  height: 56px;
-  background: linear-gradient(135deg, var(--teal-bg), var(--gray-100));
-  border-radius: var(--radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 1rem;
-  font-size: 1.5rem;
-}
-.network-card h3 { font-family: var(--font-body); font-size: 1rem; margin-bottom: 0.3rem; }
-.network-card p { font-size: 0.8rem; color: var(--gray-600); margin-bottom: 1rem; }
-.network-link { font-size: 0.8rem; font-weight: 600; }
+
+
+
+
+ h3 { font-family: var(--font-body); font-size: 1rem; margin-bottom: 0.3rem; }
+ p { font-size: 0.8rem; color: var(--gray-600); margin-bottom: 1rem; }
+
 
 /* ============================================
    EDITOR'S CHOICE FEATURE
@@ -610,8 +588,8 @@ p { margin-bottom: 1rem; }
 .footer-col li { margin-bottom: 0.5rem; }
 .footer-col a { color: rgba(255,255,255,0.6); font-size: 0.85rem; transition: color 0.2s; }
 .footer-col a:hover { color: var(--gold); }
-.footer-network { background: rgba(255,255,255,0.04); border-radius: var(--radius); padding: 1.5rem; margin-bottom: 2rem; }
-.footer-network h4 { color: var(--gold); font-family: var(--font-body); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+
+
 .footer-network-links { display: flex; flex-wrap: wrap; gap: 1rem; }
 .footer-network-links a { color: rgba(255,255,255,0.6); font-size: 0.8rem; transition: color 0.2s; }
 .footer-network-links a:hover { color: var(--gold); }
@@ -632,7 +610,7 @@ p { margin-bottom: 1rem; }
    ============================================ */
 @media (max-width: 1024px) {
   .steps-grid { grid-template-columns: repeat(2, 1fr); }
-  .network-grid { grid-template-columns: repeat(2, 1fr); }
+  
 }
 @media (max-width: 768px) {
   .nav-desktop { display: none; }
@@ -656,7 +634,7 @@ p { margin-bottom: 1rem; }
 }
 @media (max-width: 480px) {
   .footer-grid { grid-template-columns: 1fr; }
-  .network-grid { grid-template-columns: 1fr; }
+  
   .hero-trust { flex-direction: column; gap: 0.5rem; align-items: flex-start; }
 }
 
@@ -701,8 +679,7 @@ p { margin-bottom: 1rem; }
         <li><a href="#reviews">Reviews</a></li>
         <li><a href="#comparison">Compare</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li></li>
-      </ul>
+        </ul>
     </nav>
     <button class="menu-toggle" aria-label="Toggle Menu" onclick="toggleMenu()">
       <span></span><span></span><span></span>
@@ -1543,14 +1520,6 @@ p { margin-bottom: 1rem; }
       </div>
     </div>
 
-    <div class="footer-network">
-      
-      <div class="footer-network-links">
-        
-        
-        
-        
-      </div>
     </div>
 
     <div class="footer-bottom">
@@ -1632,7 +1601,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.step-card, .product-card, .review-card, .network-card').forEach(el => {
+document.querySelectorAll('.step-card, .product-card, .review-card').forEach(el => {
   observer.observe(el);
 });
 
