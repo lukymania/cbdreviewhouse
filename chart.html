@@ -47,10 +47,28 @@
 </script>
 </head>
 <body>
-<header style="background:#1a1a2e;padding:1rem 0;">
-  <div class="container" style="display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;padding:0 2rem;">
-    <a href="/" style="color:#C9A962;font-size:1.5rem;font-weight:700;text-decoration:none;font-family:'Segoe UI', system-ui, -apple-system, sans-serif;">CBD Review <span style="color:#fff;">House</span></a>
-    <nav><ul style="display:flex;gap:1.5rem;list-style:none;margin:0;padding:0;"><li><a href="/">Home</a></li><li><a href="/#rankings">Rankings</a></li><li><a href="/#reviews">Reviews</a></li><li><a href="buyers-guide.html">Buyer's Guide</a></li><li><a href="/chart.html" class="active">Chart</a></li><li><a href="/#faq">FAQ</a></li></ul></nav>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#" class="logo" aria-label="CBD Review House Home">
+      <img src="assets/logo.png" alt="CBD Review House Logo" width="44" height="44" loading="eager"/>
+      <div class="logo-text">
+        <span class="logo-title">CBD Review House</span>
+        <span class="logo-tagline">Honest Reviews. Real Results.</span>
+      </div>
+    </a>
+    <nav aria-label="Main Navigation">
+      <ul class="nav-desktop">
+        <li><a href="#rankings">Rankings</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#comparison">Compare</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="buyers-guide.html">Buyer's Guide</a></li>
+        <li><a class="active" href="chart.html">Chart</a></li>
+        </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
