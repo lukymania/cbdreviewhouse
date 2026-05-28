@@ -7,6 +7,101 @@
 <meta name="description" content="Interactive D3.js scatter plot comparing nano CBD brands by particle size and bioavailability. Arkos Bioscience leads at 60nm / 90% bioavailability.">
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <style>
+    /* === HEADER/NAV/LOGO CSS === */
+.site-header {
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.logo { display: flex; align-items: center; gap: 0.75rem; }
+.logo img { width: 44px; height: 44px; }
+.logo-text { display: flex; flex-direction: column; }
+.logo-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--teal);
+  line-height: 1.2;
+}
+.logo-tagline {
+  font-size: 0.65rem;
+  color: var(--gold);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.nav-desktop { display: flex; gap: 2rem; list-style: none; }
+.nav-desktop a {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--gray-700);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.nav-desktop a:hover { color: var(--teal); }
+.nav-cta {
+  background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+  color: var(--white) !important;
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius);
+  font-size: 0.8rem;
+}
+.nav-cta:hover { background: linear-gradient(135deg, var(--teal-dark), var(--teal)); color: var(--white) !important; }
+.menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
+.menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--gray-800);
+  margin: 5px 0;
+  transition: 0.3s;
+  border-radius: 1px;
+}
+.section-header { text-align: center; max-width: 700px; margin: 0 auto 3rem; }
+.section-label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+.section-header h2 { margin-bottom: 0.75rem; }
+.section-header p { color: var(--gray-600); font-size: 1.05rem; }
+.product-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+.product-header h3 { font-family: var(--font-body); font-size: 1.15rem; font-weight: 700; }
+.review-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+.review-rank {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--gray-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--gray-700);
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+.footer-brand .logo-title { color: var(--white); font-size: 1.1rem; }
+.footer-brand .logo-tagline { color: var(--gold); font-size: 0.6rem; }
+  .nav-desktop { display: none; }
+  .menu-toggle { display: block; }
+    /* === END HEADER CSS === */
+
   * { margin:0;padding:0;box-sizing:border-box; }
   body { font-family:'Segoe UI', system-ui, -apple-system, sans-serif;background:#ffffff;color:#1a1a2e;line-height:1.6; }
   a { color:#0D7377;text-decoration:none;transition:color 0.2s; }
