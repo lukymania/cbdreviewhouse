@@ -7,6 +7,37 @@
 <meta name="description" content="The definitive nano CBD buyer's guide: 10 evaluation criteria, independent lab results, brand comparisons, and expert recommendations. Updated May 2026.">
 <meta name="keywords" content="nano CBD, CBD bioavailability, CBD buyer's guide, nano CBD reviews, THC-free CBD, CBD particle size, Arkos Bioscience, CBD COA, third-party tested CBD, water-soluble CBD">
 <style>
+    :root {
+  --teal: #0D7377;
+  --teal-dark: #095C5F;
+  --teal-light: #149CA1;
+  --teal-bg: #E6F4F4;
+  --gold: #C9A962;
+  --gold-dark: #A88940;
+  --gold-light: #E0C87E;
+  --white: #FFFFFF;
+  --black: #1A1A1A;
+  --gray-900: #212529;
+  --gray-800: #343A40;
+  --gray-700: #495057;
+  --gray-600: #6C757D;
+  --gray-500: #ADB5BD;
+  --gray-400: #CED4DA;
+  --gray-300: #DEE2E6;
+  --gray-200: #E9ECEF;
+  --gray-100: #F8F9FA;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.07);
+  --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
+  --shadow-xl: 0 20px 40px rgba(0,0,0,0.12);
+  --radius: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --max-width: 1200px;
+}
+
   :root {
     --teal: #0D7377;
     --teal-dark: #095C5F;
@@ -517,19 +548,33 @@
 }
 </script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
 </head>
 <body>
 
 <!-- Header -->
-<header>
-  <div class="container">
-    <div class="logo">CBD Review <span>House</span></div>
-    <nav>
-      <a href="https://cbdreviewhouse.com">Home</a>
-      <a href="#checklist">Checklist</a>
-      <a href="#brands">Compare</a>
-      <a href="#faq">FAQ</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#" class="logo" aria-label="CBD Review House Home">
+      <img src="assets/logo.png" alt="CBD Review House Logo" width="44" height="44" loading="eager"/>
+      <div class="logo-text">
+        <span class="logo-title">CBD Review House</span>
+        <span class="logo-tagline">Honest Reviews. Real Results.</span>
+      </div>
+    </a>
+    <nav aria-label="Main Navigation">
+      <ul class="nav-desktop">
+        <li><a href="#rankings">Rankings</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#comparison">Compare</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="buyers-guide.html">Buyer's Guide</a></li>
+        </ul>
     </nav>
+    <button class="menu-toggle" aria-label="Toggle Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
